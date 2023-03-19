@@ -27,11 +27,18 @@ img {
   display: block;
 }
 
-.background-logo {
+.background-logo-hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--text-headersecond-color);
-
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 button {
@@ -284,6 +291,30 @@ h2 {
   padding-bottom: 32px;
 }
 
+.our-team-about {
+  margin-bottom: 8px;
+}
+
+.social-list-link {
+  height: 40px;
+  width: 40px;
+  background-color: var(--brand-logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--hover-btn-portfolio-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+/* --------/our team------ */
 /* ==========/section1-index==================== */
 /* ==========section1-portfolio================= */
 .filtr-portfolio {
@@ -349,6 +380,12 @@ h2 {
 /* ==========/BODY======================== */
 
 /* ===========footer======================= */
+.background-logo-footer {
+  background-color: var(--text-headersecond-color);
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 .text-footer-logo > p {
   width: 264px;
