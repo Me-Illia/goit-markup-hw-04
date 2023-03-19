@@ -249,6 +249,15 @@ h2 {
 }
 
 /* ==========section1-index===================== */
+.background-futures {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+  width: 264px;
+  background-color: var(--footer-logo-color);
+  border-radius: 4px;
+}
 
 .main-menu-future,
 .main-menu-team {
