@@ -92,8 +92,6 @@ h2 {
 }
 .menu-filter-div:hover,
 .menu-filter-div:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   cursor: pointer;
 }
 
@@ -261,11 +259,12 @@ h2 {
 
 /* ==========section1-index===================== */
 .background-futures {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 8px;
   width: 264px;
+  height: 112px;
   background-color: var(--footer-logo-color);
   border-radius: 4px;
 }
@@ -358,6 +357,17 @@ h2 {
   width: calc((100% - 48px) / 3);
 }
 
+.li-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.menu-filter-about,
+.menu-filter-targetname:hover,
+.menu-filter-about,
+.menu-filter-targetname:focus {
+  cursor: pointer;
+}
 /* ==========/section1-portfolio================= */
 /* ==========section2-index===================== */
 .menu-feature {
@@ -391,7 +401,6 @@ h2 {
 }
 /* ================SECTION "OUR TEAM"========== */
 .our-team-page {
-  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   background-color: var(--footer-logo-color);
@@ -411,8 +420,8 @@ h2 {
 
 .customers-background {
   width: 168px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /* padding-top: 16px;
+  padding-bottom: 16px; */
   border-radius: 4px;
   border: 1px solid var(--border-customers);
 }
@@ -420,23 +429,40 @@ h2 {
 .customers-background:hover,
 .customers-background:focus {
   border-color: var(--brand-logo-color);
-  color: var(--brand-logo-color);
 }
 
 .customers-list-link {
   display: block;
-  /* padding: 16px 32px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .customers-list-icon {
   fill: var(--border-customers);
-  /* margin: 16px 32px; */
 }
 
-.customers-list-icon:hover,
-.customers-list-icon:focus {
+.customers-list-link:hover .customers-list-icon,
+.customers-list-link:focus .customers-list-icon {
   fill: var(--brand-logo-color);
 }
+
+/* .customers-background:hover,
+.customers-background:focus {
+  border-color: var(--brand-logo-color);
+}
+
+.customers-background:hover .customers-list-icon,
+.customers-background:focus .customers-list-icon {
+  fill: var(--brand-logo-color);
+}
+
+.customers-list-link {
+  display: block;
+}
+
+.customers-list-icon {
+  fill: var(--border-customers);
+} */
 
 .customers-list {
   display: flex;
