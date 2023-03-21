@@ -90,10 +90,6 @@ h2 {
   border: 1px solid var(--footer-text-color);
   border-top: none;
 }
-.menu-filter-div:hover,
-.menu-filter-div:focus {
-  cursor: pointer;
-}
 
 .menu-filter,
 .menu-text {
@@ -357,17 +353,23 @@ h2 {
   width: calc((100% - 48px) / 3);
 }
 
-.li-item:hover {
+.menu-filter-link {
+  color: var(--textp-color);
+}
+
+.menu-filter-about,
+.menu-filter-targetname {
+  display: block;
+}
+.menu-filter-link {
+  display: block;
+}
+.menu-filter-link:hover,
+.menu-filter-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.menu-filter-about,
-.menu-filter-targetname:hover,
-.menu-filter-about,
-.menu-filter-targetname:focus {
-  cursor: pointer;
-}
 /* ==========/section1-portfolio================= */
 /* ==========section2-index===================== */
 .menu-feature {
